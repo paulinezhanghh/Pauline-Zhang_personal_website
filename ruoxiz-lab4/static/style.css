@@ -1,0 +1,74 @@
+*{
+    font-family: 'Roboto';
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variant: bold;
+    padding: 5px;
+    margin: 5px;
+}
+#webname {
+    background-color: #92ad70;
+    color: white;
+}
+.navigation a{
+    text-decoration: none;
+    color:#92ad70;
+    margin-right: 15px;
+}
+th{
+    padding: 12px;
+    background-color: #c0c0c0;
+    color: rgb(255, 255, 255);
+    width:fit-content;
+}
+tbody tr:nth-child(even) {
+    background-color: #dcdcdc;
+}
+form *{
+    display: block;
+    margin:auto;
+    text-align: center;
+}
+textarea{
+    width: 30%;
+    height: 150px;
+}
+input[type="submit"]{
+    background-color: #92ad70;
+    color: white;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:auto;
+}
+
+#funList {
+    display: none;
+}
+
+#showButton {
+    background-color: #cfcfcf;
+    color: rgb(65, 65, 65);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#fullBio, #readLessBtn {
+    display: none;
+}
+
+#readMoreBtn, #readLessBtn {
+    background-color: #cfcfcf;
+    color: rgb(65, 65, 65);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+
