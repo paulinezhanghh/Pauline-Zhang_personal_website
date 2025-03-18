@@ -25,6 +25,7 @@ else if(C.length<z){
 else{
     console.log('good job!');
 }
+addYear()
 
 let L1=['Watermelon','Pineapple','Pear','Banana'];
 let L2=['Apple','Banana','Kiwi','Orange'];
@@ -62,6 +63,7 @@ function greetingFunc(){
 }
 
 
+
 if(window.location.href.includes('index.html')){
     window.onload=greetingFunc;
 }
@@ -71,6 +73,7 @@ function addYear(){
     let pageYear=document.getElementById('copyYear');
     pageYear.innerHTML="© "+currentYear+" designed and coded by Pauline Zhang";
 }
+
 
 function showList(){
     let list=document.getElementById('funList');
@@ -83,18 +86,16 @@ function showList(){
 }
 
 $(document).ready(function() {
-    // When "Read More" is clicked
     $("#readMoreBtn").click(function() {
-        $("#fullBio").slideDown();  // Show full bio
-        $("#readMoreBtn").hide();   // Hide Read More button
-        $("#readLessBtn").show();   // Show Read Less button
+        $("#fullBio").slideDown(); 
+        $("#readMoreBtn").hide(); 
+        $("#readLessBtn").show();
     });
 
-    // When "Read Less" is clicked
     $("#readLessBtn").click(function() {
-        $("#fullBio").slideUp();    // Hide full bio
-        $("#readMoreBtn").show();   // Show Read More button
-        $("#readLessBtn").hide();   // Hide Read Less button
+        $("#fullBio").slideUp();
+        $("#readMoreBtn").show();   
+        $("#readLessBtn").hide();  
     });
 });
 
