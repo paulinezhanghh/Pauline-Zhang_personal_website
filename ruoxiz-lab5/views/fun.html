@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="../static/script.js" defer></script>
+    <script src="../static/script_fun.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta name="author" content="Your name">
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title> 
 </head>
 <body style="font-family: Arial" onload="addYear()">
     <header>
@@ -26,35 +26,36 @@
             <a href="./fun.html">For fun</a>
         </nav>
     </header>
-    <div class="main">
-        <h2>Curriculum Vitae</h2>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>RDFZ Chaoyang Branch School</td>
-                <td>High School Graduates, in A-LEVEL program</td>
-            </tr>
-            <tr>
-                <td>re:Bloom</td>
-                <td>Project Manager for Wellness Withn</td>
-            </tr>
-            <tr>
-                <td>Carnegie Mellon University</td>
-                <td>A BXA student majoring in Information Systems and Architecture</td>
-            </tr>
-            <tr>
-                <td>Carnegie Mellon University</td>
-                <td>Accelerated Master of Human-Computer Interaction</td>
-            </tr>
-        </table>
-        <a href="../static/Resume_Ruoxi Zhang.pdf" target="_blank" rel="noopener noreferrer">View My Resume (PDF)</a>
+    <div class="mainLayout">
+        <div class="item1">
+            <h2>Things I love to do for fun</h2>
+            <!-- <button id="showButton" onclick="showList()">Click to see...</button> -->
+            <ul id="funList">
+                <li>Reading</li>
+                <li>Traveling</li>
+                <li>Photography</li>
+                <li>Fencing</li>
+                <li>Cooking</li>
+            </ul>
+        </div>
+        <div class="item2">
+            <img class="funIMG" src="../static/view-chameleon-with-bright-neon-colors_23-2151682738.avif">
+        </div>
+        <div class="item3">
+            <iframe class="funVideo" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        </div>
+        <div class="item4">
+            <div class="container">
+                <h2>Need Some Advice?</h2>
+                <p id="adviceText">Click the button to get a random piece of advice!</p>
+                <button id="adviceButton" onclick="getAdvice()">Get Your Advice</button>
+            </div>
+        </div>
     </div>
     <footer>
         <p id="copyYear"></p>
     </footer>
+
     
 </body>
 </html>
