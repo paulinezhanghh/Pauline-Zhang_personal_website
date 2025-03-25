@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template Page</title>
+    <link rel="stylesheet" href="static/templates.css">
+    <script src="static/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body onload="addYear()">
+    <div class="containers">
+        <header class="header">
+            <h1 id="webname">Pauline Zhang</h1>
+        </header>
+        <nav class="nav">
+            <i class="fas fa-bars" id="menu-icon" onclick="toggleMenu()"></i>
+            <ul class="nav-links-des">
+                <a href="./index.html">Home</a>
+                <a href="views/cv.html">CV</a>
+                <a href="views/contact.html">Contact me</a>
+                <a href="views/fun.html">For fun</a>
+            </ul>
+            <ul class="nav-links-mob">
+                <a href="./index.html">Home</a>
+                <a href="views/cv.html">CV</a>
+                <a href="views/contact.html">Contact me</a>
+                <a href="views/fun.html">For fun</a>
+            </ul>
+        </nav>
+        <div class="mainimg">
+            <img src="static/WechatIMG642.jpg" alt="Pauline Zhang" width="200">
+        </div>
+        <div class="maincontent">
+            <p id="shortBio">I am a student at Carnegie Mellon University, majoring in Information Systems. I am passionate about technology and design.</p>
+            <button id="readMoreBtn">Read More</button>
+            <p id="fullBio"> I am also interested in data analysis and visualization. I am currently looking for internship opportunities in the field of data analysis and visualization.</p>
+            <button id="readLessBtn">Read Less</button>
+        </div>
+
+        <div class="bottomcontent">
+            <p>I am a student at Carnegie Mellon University, majoring in Information Systems. I am passionate about technology and design.</p>
+            <p> I am also interested in data analysis and visualization. I am currently looking for internship opportunities in the field of data analysis and visualization.</p>
+        </div>
+        <footer class="footer">
+            <p id="copyYear"> </p>
+        </footer>
+    </div>
+</body>
+</html>
